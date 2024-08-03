@@ -1,0 +1,54 @@
+{
+  "name": "yumi",
+  "version": "3.0.1",
+  "description": "Simple bot whatsapp esm module",
+  "main": "system/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node system/index.js"
+  },
+  "keywords": [
+    "whatsapp-bot",
+    "wabot",
+    "wabotaq",
+    "yumi"
+  ],
+  "author": "Im-Dims",
+  "license": "MIT", 
+  "dependencies": {
+    "@hapi/boom": "^10.0.1",
+    "@whiskeysockets/baileys": "^6.7.5",
+    "chalk": "^5.3.0",
+    "child_process": "^1.0.2",
+    "cheerio": "^1.0.0-rc.12",
+    "node-fetch": "^2.6.11",
+    "node-cron": "^3.0.3",
+    "awesome-phonenumber": "^6.9.0",
+    "archiver": "^6.0.1",
+    "chokidar": "^3.5.3",
+    "fake-useragent": "^1.0.1",
+    "file-type": "^18.5.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "form-data": "^4.0.0",
+    "formdata-node": "^5.0.0",
+    "glob": "^7.2.3",
+    "got": "^14.4.1",
+    "groq-sdk": "^0.5.0",
+    "moment-timezone": "^0.5.43",
+    "node-webpmux": "^3.1.7",
+    "os": "^0.1.2",
+    "qrcode": "^1.5.0",
+    "qrcode-terminal": "^0.12.0",
+    "qs": "^6.12.3",
+    "syntax-error": "^1.4.0",
+    "terminal-kit": "^3.0.1",
+    "yt-search": "2.11.1",
+    "ytdl-core": "^4.11.5"
+  },  
+  "devDependencies": {
+    "@adiwajshing/keyed-db": "^0.2.4",
+    "axios": "^1.4.0",
+    "jimp": "^0.16.13",
+    "link-preview-js": "^3.0.5"
+  }
+}
