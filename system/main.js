@@ -242,11 +242,6 @@ async function start() {
   setInterval(async () => {
     if (global.db) await database.write(global.db)
   }, 30000)
-
-  setInterval(async () => {
-    if (stopped === 'close' || !sock || !sock.user) return
-    console.log(chalk.cyanBright(`Storage Setting Successful ✓`))
-  }, 60 * 60 * 1000)
   
   return sock
 }
