@@ -55,6 +55,7 @@ async function start() {
            keys: baileys.makeCacheableSignalKeyStore(state.keys, logger),
         },
         browser: baileys.Browsers.windows("Safari"),
+        isLatest: true,
         markOnlineOnConnect: true,
         generateHighQualityLinkPreview: true,
         getMessage: async (key) => {
