@@ -68,9 +68,7 @@ async function start() {
         msgRetryCounterCache,
         defaultQueryTimeoutMs: 0,
         connectTimeoutMs: 60000,
-        generateHighQualityLinkPreview: true,
-        syncFullHistory: false,
-        markOnlineOnConnect: true
+        syncFullHistory: false
     })
 
     store.bind(sock.ev)
